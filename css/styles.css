@@ -38,7 +38,7 @@ body {
   height: 100%;
   line-height: 1;
   font-size: 16px;
-  color: #252B42;
+  color: #252b42;
   font-weight: 500;
   font-family: Montserrat;
 }
@@ -46,6 +46,8 @@ body {
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Технический класс, не является бэм элементом */
@@ -56,75 +58,203 @@ body {
   box-sizing: content-box;
 }
 
+._ibg {
+  position: relative;
+}
+
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
 /* .......................HEADER....................... */
 .header {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 50;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
 }
 
 .header__container {
-    display: flex;
-    min-height: 104px;
-    align-items: center;
+  display: flex;
+  min-height: 104px;
+  align-items: center;
 }
 
-
 .header__logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  color: inherit;
 }
 
 .header__menu {
-    margin: 0px 0px 0px 132px;
+  margin: 0px 0px 0px 132px;
 }
 
-@media (max-width: 992px){
-    .header__menu{
-        margin: 0px 0px 0px 80px;
-    }
+@media (max-width: 992px) {
+  .header__menu {
+    margin: 0px 0px 0px 80px;
+  }
 }
 
-@media (max-width: 767px){
-    .header__menu{
-        margin: 0px 0px 0px 50px;
-    }
+@media (max-width: 767px) {
+  .header__menu {
+    margin: 0px 0px 0px 50px;
+  }
 }
 
-@media (max-width: 479px){
-    .header__menu{
-        margin: 0px 0px 0px 20px;
-    }
+@media (max-width: 479px) {
+  .header__menu {
+    margin: 0px 0px 0px 20px;
+  }
 }
 
 .menu {
-    padding: 5px 0;
+  padding: 5px 0;
 }
 
 .menu__list {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .menu__item {
-
 }
 
 .menu__item:not(:last-child) {
-    margin: 0px 21px 0px 0px;
+  margin: 0px 21px 0px 0px;
 }
 
 .menu__link {
-    color: #737373;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 171%;
+  color: #737373;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171%;
 }
-@media (max-width: 479px){
-    .menu__link{
-        font-size: 18px;
-    }
+@media (max-width: 479px) {
+  .menu__link {
+    font-size: 18px;
+  }
+}
+/* .......................MAIN....................... */
+.page {
+  flex: 1 1 auto;
+}
+
+.page__main-block {
+}
+
+.main-block {
+  position: relative;
+}
+
+.main-block__container {
+}
+
+._container {
+}
+
+.main-block__body {
+  padding: 184px 0px 191px 0px;
+  position: relative;
+  z-index: 2;
+  max-width: 400px;
+}
+
+@media (max-width: 992px) {
+  .main-block__body {
+    padding: 120px 0px 191px 0px;
+  }
+}
+
+.main-block__body > *:not(:last-child) {
+  margin: 0px 0px 35px 0px;
+}
+
+.main-block__title {
+  font-size: 58px;
+  line-height: 137%;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 479px) {
+  .main-block__title {
+    font-size: 42px;
+  }
+}
+
+.main-block__text {
+  color: #737373;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+}
+
+.main-block__buttons {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: -10px 0px;
+}
+
+.main-block__button {
+  display: flex;
+  font-weight: 700;
+  line-height: 150%;
+  border-radius: 37px;
+  min-height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 36px;
+  margin: 10px 0px;
+}
+
+@media (max-width: 479px) {
+  .main-block__button {
+    flex: 1 1 auto;
+  }
+}
+
+.main-block__button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.main-block__button_orange {
+  background: #ff7b47;
+  color: #ffffff;
+}
+
+.main-block__button_border {
+  border: 1px solid #0d5c63;
+  color: #0d5c63;
+}
+
+.main-block__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 1300px) {
+  .main-block__image img {
+    object-position: right;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-block__image {
+    opacity: 0.5;
+  }
+}
+
+/* .......................FOOTER....................... */
+.footer {
 }
