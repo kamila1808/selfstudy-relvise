@@ -41,6 +41,7 @@ body {
   color: #252b42;
   font-weight: 500;
   font-family: Montserrat;
+  background-color: #fafafa;
 }
 
 .wrapper {
@@ -153,12 +154,6 @@ body {
   position: relative;
 }
 
-.page__services {
-  position: relative;
-  z-index: 2;
-  margin: -111px 0px 0px 0px;
-}
-
 .main-block__body {
   padding: 184px 0px 191px 0px;
   position: relative;
@@ -173,10 +168,10 @@ body {
 }
 
 @media (max-width: 479px) {
-    .main-block__body {
-      padding: 115px 0px 160px 0px;
-    }
+  .main-block__body {
+    padding: 115px 0px 160px 0px;
   }
+}
 
 .main-block__body > *:not(:last-child) {
   margin: 0px 0px 35px 0px;
@@ -261,6 +256,50 @@ body {
   }
 }
 
+.page__services {
+  position: relative;
+  z-index: 2;
+  margin: -111px 0px 0px 0px;
+}
+
+.page__advantages {
+}
+
+/* .......................HEADER-BLOCK....................... */
+
+.header-block {
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.header-block__title {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 10px;
+  line-height: 143%;
+}
+
+.header-block__title:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+
+@media (max-width: 992px) {
+  .header-block__title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-block__title {
+    font-size: 30px;
+  }
+}
+
+.header-block__sub-title {
+  line-height: 143%;
+  color: #737373;
+}
+
 /* .......................SERVICES....................... */
 .services {
 }
@@ -286,9 +325,9 @@ body {
 }
 
 @media (min-width: 670px) {
-    .services__column{
-        padding: 0px 15px;
-    }
+  .services__column {
+    padding: 0px 15px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -309,9 +348,9 @@ body {
 }
 
 @media (max-width: 479px) {
-    .services__item {
-        padding: 25px;
-    }
+  .services__item {
+    padding: 25px;
+  }
 }
 
 .item-service {
@@ -349,6 +388,88 @@ body {
   line-height: 142%;
   color: #737373;
   letter-spacing: 0.2px;
+}
+
+/* .......................ADVANTAGES....................... */
+
+.advantages {
+  padding: 80px 0px;
+}
+
+@media (max-width: 992px) {
+  .advantages {
+    padding: 50px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages {
+    padding: 30px 0px;
+  }
+}
+
+.advantages__container {
+}
+
+.advantages__header {
+  margin: 0px 0px 50px 0px;
+}
+
+.advantages__body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px -30px;
+}
+
+.advantages__column {
+  padding: 0px 15px;
+  margin: 0px 0px 30px 0px;
+  flex: 0 1 25%;
+}
+
+@media (max-width: 1020px) {
+  .advantages__column {
+    flex: 0 1 50%;
+  }
+}
+
+@media (max-width: 560px) {
+  .advantages__column {
+    flex: 0 1 100%;
+  }
+}
+
+.advantages__item {
+  background-color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.advantages__item > *:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+
+.advantages__icon {
+  height: 48px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.advantages__value {
+  font-size: 40px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+
+.advantages__text {
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #737373;
 }
 
 /* .......................FOOTER....................... */
