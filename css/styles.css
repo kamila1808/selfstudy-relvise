@@ -269,7 +269,11 @@ body {
 }
 .page__whoweare {
 }
-
+.page__clients {
+  margin: 0px 0px 10px 0px;
+}
+.page__subscribe {
+}
 /* .......................HEADER-BLOCK....................... */
 
 .header-block {
@@ -573,6 +577,7 @@ body {
 /* .......................WhoWeAre....................... */
 .whoweare {
   padding: 80px 0px 130px 0px;
+  background-color: #ffffff;
 }
 
 @media (max-width: 950px) {
@@ -602,7 +607,6 @@ body {
     align-items: stretch;
   }
 }
-
 
 .whoweare__video {
   flex: 0 0 57%;
@@ -708,6 +712,131 @@ body {
   line-height: 171%;
   letter-spacing: 0.2px;
   color: #737373;
+}
+
+/* .......................CLIENTS....................... */
+
+.clients {
+  padding: 50px 0px;
+}
+.clients__container {
+}
+
+.clients__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.clients__item {
+  padding: 8px 15px;
+  flex: 0 1 16.6667%;
+  text-align: center;
+  min-width: 140px;
+}
+
+.clients__item img {
+  max-width: 100%;
+}
+
+/* .......................SUBSCRIBE....................... */
+
+.subscribe {
+  position: relative;
+}
+
+.subscribe::before {
+  content: "";
+  background-color: #252b42;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 77px;
+  left: 0;
+}
+
+.subscribe__container {
+}
+
+.subscribe__body {
+  position: relative;
+  z-index: 2;
+  margin: 0px 30px;
+  padding: 30px 50px;
+  align-items: center;
+  background-color: #17213c;
+  border-radius: 2px;
+}
+
+@media (min-width: 1070px) {
+  .subscribe__body {
+    margin: 0px 30px;
+  }
+}
+
+@media (min-width: 810px) {
+  .subscribe__title {
+    max-width: 266px;
+  }
+  .subscribe__body {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.subscribe__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+  flex: 0 1 50%;
+}
+
+@media (max-width: 810px) {
+  .subscribe__title {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .subscribe__body {
+    margin: 0px -15px;
+    padding: 20px 25px;
+  }
+}
+
+.subscribe__form {
+  flex: 0 1 50%;
+  display: flex;
+  align-items: center;
+}
+
+.subscribe__input {
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 58px;
+  padding: 0px 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  border-right: 0px;
+  border-radius: 5px 0px 0px 5px;
+  color: #737373;
+}
+
+.subscribe__input:focus {
+  color: #000;
+}
+
+.subscribe__button {
+  background-color: #ff7b47;
+  border: 1px solid #e6e6e6;
+  border-radius: 0px 5px 5px 0px;
+  display: flex;
+  min-height: 58px;
+  padding: 0px 22px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
 }
 
 /* .......................FOOTER....................... */
