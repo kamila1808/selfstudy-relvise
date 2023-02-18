@@ -274,6 +274,8 @@ body {
 }
 .page__subscribe {
 }
+.page__getintouch {
+}
 /* .......................HEADER-BLOCK....................... */
 
 .header-block {
@@ -837,6 +839,130 @@ body {
   align-items: center;
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.subscribe__button:hover{
+  background-color: #ffffff;
+  color: #ff7b47;
+}
+
+/* .......................GETINTOUCH....................... */
+
+.getintouch {
+  padding: 80px 0px 136px 0px;
+}
+
+.getintouch__container {
+}
+
+.getintouch__header {
+  margin: 0px 0px 80px 0px;
+}
+
+.getintouch__items {
+  margin: 0 -15px;
+}
+
+@media (min-width:992px){
+  .getintouch__items {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width:992px){
+  .getintouch {
+    padding: 50px 0px;
+  }
+
+  .getintouch__header {
+    margin: 0px 0px 50px 0px;
+  }
+}
+
+@media (max-width:767px){
+  .getintouch__header {
+    margin: 0px 0px 30px 0px;
+  }
+}
+
+.getintouch__item {
+  flex: 0 1 33.333%;
+}
+.item-getintouch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 50px 15px;
+}
+
+.item-getintouch > *:not(:last-child) {
+  margin: 0px 0px 15px 0px;
+}
+
+.item-getintouch__icon {
+}
+
+.item-getintouch__active{
+  background: #252B42;
+  padding: 80px 15px;
+  color: #FFFFFF;
+}
+
+.item-getintouch__active .item-getintouch__button{
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.item-getintouch__emails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-getintouch__email {
+  color: inherit;
+}
+
+.item-getintouch__email:hover {
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.2px;
+}
+
+.item-getintouch__label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+}
+
+.item-getintouch__button {
+  border: 1px solid #ff7b47;
+  min-height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ff7b47;
+  padding: 5px 20px;
+}
+
+.item-getintouch__button:hover{
+  background-color: #ff7b47;
+  color: #FFFFFF;
 }
 
 /* .......................FOOTER....................... */
